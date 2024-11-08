@@ -1,17 +1,50 @@
 @media screen and (min-width: 1024px) {
-    html{
-        
+    body{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 0px;
+        margin-left: 5rem ;
+        margin-right: 5rem;
     }
     .fond_img{
-    margin: 0px;
-    background-color:rgb(30, 31, 35);
-    width: 100%; /* ajuster la largeur a lan page */
-    height: 770px; /* Adjuster la hauteur */
-    background-image:
-        url('../img/bg.jpg'); /* importer l'image et placer un effet fondu bottom */
-    background-size:cover; /*   couvrir le header avec l'image eviter la répitition  */
-    background-repeat: no-repeat; /* evite de repeter l'image de fond */
-    background-position-y: -190px;
-
+        position: absolute;
+        margin: 0px;
+        background-color:rgb(30, 31, 35);
+        width: 100%; /* ajuster la largeur a lan page */
+        height: 770px; /* Adjuster la hauteur */
+        background-image:
+            url('../img/bg.jpg'); /* importer l'image et placer un effet fondu bottom */
+        background-size:cover; /*   couvrir le header avec l'image eviter la répitition  */
+        background-repeat: no-repeat; /* evite de repeter l'image de fond */
+        background-position-y: -190px;
     }
+
+  
+    .head{
+        text-align: center; /* sert a centrer mon titre principale dans le header */
+        margin: 0px;
+        color: white;
+    }
+    
+    .head h1{
+        margin-bottom: 0px;
+        font-size: 80px;
+    }
+
+    .head p{
+        margin-top: 0px;
+    }
+
+    .main{
+        position:relative;
+    }
+
+    .intro{
+       
+       
+        width: 100%;
+        display:flex; /* aligner les element dans le block */
+        flex-direction: column; /* dans quel direction ? dans ce cas en colonne  */ 
+    }
+
+
 }
