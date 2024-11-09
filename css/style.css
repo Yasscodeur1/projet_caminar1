@@ -1,24 +1,24 @@
-@font-face {
-    font-family: 'Berlin Sans FB Demi Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Berlin Sans FB Demi Bold'), url('/Projet_Caminar/BRLNSDB.woff') format('woff');
-    }
-
 @media screen and (min-width: 1024px) {
+    @font-face {
+        font-family: "Berlin Sans FB Demi";
+        src: url("/Projet_Caminar/Font-Family/Lexend[wght].ttf") format("opentype");
+    }
+    
+    
     html, body {
         margin: 0;
         padding: 0;
         background-color:rgb(30, 31, 35); /* Couleur de fond générale */
     }
-    
+
     body{
-        font-family: "Berlin Sans FB Demi", Arial, sans-serif;
-        
+        font-family: "Berlin Sans FB Demi", sans-serif;
+        /* font-family: "poppins", arial, sans serif; */
+        margin: 0px;
     }
     .fond_img{
         position: absolute;
-        margin: 0px;
+        /* margin: 0px; */
         background-color:rgb(30, 31, 35);
         width: 100%; /* ajuster la largeur a lan page */
         height: 770px; /* Adjuster la hauteur */
@@ -26,43 +26,46 @@
             url('../img/bg.jpg'); /* importer l'image et placer un effet fondu bottom */
         background-size:cover; /*   couvrir le header avec l'image eviter la répitition  */
         background-repeat: no-repeat; /* evite de repeter l'image de fond */
-        z-index: 0  ;
         background-position-y: -190px;
     }
 
-  
+
     .head{
         position: relative;
         text-align: center; /* sert a centrer mon titre principale dans le header */
-        margin: 0px;
         color: white;
-        /* z-index: 1; */
-        
+
     }
-    
+
     .head h1{
-        margin-bottom: 0px;
-        font-size: 80px;
+        padding-top: 100px;
+        margin: 0px;
+        font-size: 70px;
     }
 
     .head p{
-        margin-top: 0px;
+        margin: 0 0 70px;
+        font-size: medium;
+        font-weight: thin;
+        color: #b0afaf;
     }
 
     .main{
         position:relative;
         z-index: 1;
-        margin-top: 140px;
-        margin-left: 5rem ;
-        margin-right: 5rem;
+        margin-top: 0px;
+        margin-left: 10rem ;
+        margin-right: 10rem;
+        /* box-shadow: 1px 1px 5px 5px black; */
+        
+        box-shadow: 0 0 5px rgba(32, 32, 32, 0.223), 0 0 10px rgb(25, 25, 25), 0 0 15px rgb(19, 19, 19), 0 0 20px rgb(10, 10, 10);
+        
+        
+
     }
 
     .intro{
         background-color: #ffffff;
-        color: ;
-        /* width: 70%; */
-        /* height: 500px; */
-        
         display:flex; /* aligner les element dans le block */
         flex-direction: column; /* dans quel direction ? dans ce cas en colonne   */
         flex-wrap: nowrap;
@@ -70,20 +73,43 @@
     }
 
     .intro h1{
-        
+        text-align: center;
+        margin-bottom: 50px;
+        padding: 10px;
+        font-size: xx-large;
+        font-weight:bold;
+        margin: 50px 0 0 0;
+        position: relative;
     }
-    
-    .intro_p{
+
+    .intro h1::after{
+        content: "";
+        display: block;
+        width: 10%;
+        height: 1px;
+        background-color:rgba(0, 0, 0, 0.154);
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .tro{
+        color: #d7d6d6;
+        margin: 30px 0 50px;
+        letter-spacing: 3px;
+    }
+
+    .int{
         background-color: #f5f5f5;
         text-align: start;
-        
+        padding: 80px;
     }
-    .intro_p p{
+
+    .int p{
         color: #7a7a7a;
         font-weight: 100;
 
-        margin: 100px;
-        
     }
 
 
