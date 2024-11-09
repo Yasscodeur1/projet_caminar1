@@ -1,0 +1,79 @@
+/* Styles pour les écrans mobiles entre 321px et 480px */
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    @font-face {
+        font-family: "Berlin Sans FB Demi";
+        src: url("/Projet_Caminar/Font-Family/Lexend[wght].ttf") format("opentype");
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        background-color:rgb(30, 31, 35); /* Couleur de fond générale */
+    }
+
+    body {
+        font-family: "Berlin Sans FB Demi", sans-serif;
+        font-size: 14px; /* Diminuer la taille de la police pour mobile */
+        margin: 0;
+    }
+
+    .fond_img {
+        position: absolute;
+        width: 90em;
+        height: 50em; /* Adapter la hauteur pour les petits écrans */
+        background-image:
+            url('../img/bg.jpg'); /* importer l'image et placer un effet fondu bottom */
+        background-size:cover; /*   couvrir le header avec l'image eviter la répitition  */
+        background-repeat: no-repeat; /* evite de repeter l'image de fond */
+        background-position-y: -190px;
+        /* background-position-y: center; Centrer l'image sur mobile */
+    }
+
+    .head{
+        position: relative;
+    }
+
+    .head h1 {
+        padding-top: 50px;
+        font-size: 36px; /* Diminuer la taille du titre */
+    }
+
+    .head p {
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+
+    .main {
+        position:relative;
+        margin: 0 1rem; /* Réduire les marges latérales pour le contenu */
+        box-shadow: none; /* Optionnel : enlever l'ombre sur mobile */
+    }
+
+    .intro h1 {
+        font-size: 24px;
+        margin: 20px 0 10px;
+    }
+
+    .intro h1::after {
+        width: 20%;
+    }
+
+    .intro {
+        padding: 20px;
+    }
+
+    .tro {
+        font-size: 12px;
+        letter-spacing: 1px;
+        margin: 20px 0 30px;
+    }
+
+    .int {
+        padding: 20px;
+    }
+
+    .int p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+}
