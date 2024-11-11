@@ -1,0 +1,603 @@
+Last login: Fri Nov  8 11:49:45 on ttys000
+macbook@YASSCODEUR ~ % cd desktop
+macbook@YASSCODEUR desktop % mkdir projet_git/{css,img,docs
+mkdir: projet_git: No such file or directory
+macbook@YASSCODEUR desktop % mkdir -p  projet_git/{css,img,docs
+macbook@YASSCODEUR desktop % mkdir -p  projet_git/{css,img,docs}
+macbook@YASSCODEUR desktop % ls
+Projet css	Projet css.zip	Responsive	projet_git
+macbook@YASSCODEUR desktop % cd projet_git
+macbook@YASSCODEUR projet_git % ls
+css	docs	img
+macbook@YASSCODEUR projet_git % touch index.html css/style.css
+macbook@YASSCODEUR projet_git % git init
+xcode-select: note: No developer tools were found, requesting install.
+If developer tools are located at a non-default location on disk, use `sudo xcode-select --switch path/to/Xcode.app` to specify the Xcode that you wish to use for command line developer tools, and cancel the installation dialog.
+See `man xcode-select` for more details.
+macbook@YASSCODEUR projet_git % git init
+Initialized empty Git repository in /Users/macbook/Desktop/projet_git/.git/
+macbook@YASSCODEUR projet_git % ls -a
+.		.DS_Store	css		img
+..		.git		docs		index.html
+macbook@YASSCODEUR projet_git % ../
+zsh: permission denied: ../
+macbook@YASSCODEUR projet_git % cd ../
+macbook@YASSCODEUR Desktop % cd Projet_Caminar
+macbook@YASSCODEUR Projet_Caminar % git chekout -b main
+git: 'chekout' is not a git command. See 'git --help'.
+
+The most similar command is
+	checkout
+macbook@YASSCODEUR Projet_Caminar % git init            
+Reinitialized existing Git repository in /Users/macbook/Desktop/Projet_Caminar/.git/
+macbook@YASSCODEUR Projet_Caminar % git chekout -b Dev 
+git: 'chekout' is not a git command. See 'git --help'.
+
+The most similar command is
+	checkout
+macbook@YASSCODEUR Projet_Caminar % git checkout -b Dev
+Switched to a new branch 'Dev'
+macbook@YASSCODEUR Projet_Caminar % git add *          
+macbook@YASSCODEUR Projet_Caminar % git commit -m "le corp html"
+On branch Dev
+nothing to commit, working tree clean
+macbook@YASSCODEUR Projet_Caminar % tree
+zsh: command not found: tree
+macbook@YASSCODEUR Projet_Caminar % cd tree
+cd: no such file or directory: tree
+macbook@YASSCODEUR Projet_Caminar % pwd
+/Users/macbook/Desktop/Projet_Caminar
+macbook@YASSCODEUR Projet_Caminar % git add *                   
+macbook@YASSCODEUR Projet_Caminar % git commit -m "le corp html"
+[Dev 22b2662] le corp html
+ Committer: Coding_Mac <macbook@YASSCODEUR.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 23 insertions(+), 1 deletion(-)
+macbook@YASSCODEUR Projet_Caminar % git checkout -b header      
+Switched to a new branch 'header'
+macbook@YASSCODEUR Projet_Caminar % git add *                   
+macbook@YASSCODEUR Projet_Caminar % git commit -m "creation du dobyavec l'image de fond et la couleur "
+[header 46df942] creation du dobyavec l'image de fond et la couleur
+ Committer: Coding_Mac <macbook@YASSCODEUR.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 20 insertions(+), 1 deletion(-)
+macbook@YASSCODEUR Projet_Caminar % git log
+commit 46df9420418d3ec1cb3b38ab50f02c0306277898 (HEAD -> header)
+Author: Coding_Mac <macbook@YASSCODEUR.local>
+Date:   Fri Nov 8 16:51:35 2024 +0100
+
+    creation du dobyavec l'image de fond et la couleur
+
+commit 22b2662749f655abe70a3587d29db8bbad74f494 (Dev)
+Author: Coding_Mac <macbook@YASSCODEUR.local>
+Date:   Fri Nov 8 16:27:33 2024 +0100
+
+    le corp html
+
+commit d51992339eb522eca00e4dc9dd0ab692cfb0b7fd (main)
+Author: Coding_Mac <macbook@YASSCODEUR.local>
+Date:   Fri Nov 8 16:02:41 2024 +0100
+
+    la base de mon projet
+macbook@YASSCODEUR Projet_Caminar % git branch
+  Dev
+* header
+  main
+macbook@YASSCODEUR Projet_Caminar % git add *
+macbook@YASSCODEUR Projet_Caminar % git commit -m "creation d'un header et de l'intro faire la mise en page"
+[header 611ab63] creation d'un header et de l'intro faire la mise en page
+ Committer: Coding_Mac <macbook@YASSCODEUR.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 60 insertions(+), 28 deletions(-)
+macbook@YASSCODEUR Projet_Caminar % ls
+css		docs		img		index.html
+macbook@YASSCODEUR Projet_Caminar % pwd
+/Users/macbook/Desktop/Projet_Caminar
+macbook@YASSCODEUR Projet_Caminar % git log
+commit 611ab635039e1b74d23d618d599d00548da86d05 (HEAD -> header)
+Author: Coding_Mac <macbook@YASSCODEUR.local>
+Date:   Sat Nov 9 00:56:12 2024 +0100
+
+    creation d'un header et de l'intro faire la mise en page
+
+commit 46df9420418d3ec1cb3b38ab50f02c0306277898
+Author: Coding_Mac <macbook@YASSCODEUR.local>
+Date:   Fri Nov 8 16:51:35 2024 +0100
+
+    creation du dobyavec l'image de fond et la couleur
+
+commit 22b2662749f655abe70a3587d29db8bbad74f494 (Dev)
+Author: Coding_Mac <macbook@YASSCODEUR.local>
+Date:   Fri Nov 8 16:27:33 2024 +0100
+
+    le corp html
+
+commit d51992339eb522eca00e4dc9dd0ab692cfb0b7fd (main)
+Author: Coding_Mac <macbook@YASSCODEUR.local>
+Date:   Fri Nov 8 16:02:41 2024 +0100
+
+    la base de mon projet
+macbook@YASSCODEUR Projet_Caminar % git branch
+  Dev
+* header
+  main
+macbook@YASSCODEUR Projet_Caminar % git branch -m header+intro
+macbook@YASSCODEUR Projet_Caminar % git branch                
+  Dev
+* header+intro
+  main
+macbook@YASSCODEUR Projet_Caminar % git add *
+macbook@YASSCODEUR Projet_Caminar % git commit -m "header et intro reste juste querlque margina faire"
+[header+intro 3245c91] header et intro reste juste querlque margina faire
+ Committer: Coding_Mac <macbook@YASSCODEUR.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 57 insertions(+), 14 deletions(-)
+ create mode 100644 BRLNSDB.woff
+macbook@YASSCODEUR Projet_Caminar % pwd
+/Users/macbook/Desktop/Projet_Caminar
+macbook@YASSCODEUR Projet_Caminar % git add *
+macbook@YASSCODEUR Projet_Caminar % git commit -m "fin de la partie header+ intro"              
+[header+intro 7b76f95] fin de la partie header+ intro
+ Committer: Coding_Mac <macbook@YASSCODEUR.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 68 files changed, 63 insertions(+), 37 deletions(-)
+ create mode 100644 Font-Family/.DS_Store
+ create mode 100644 Font-Family/AristaSans-EaKLn.otf
+ create mode 100644 Font-Family/Lexend[wght].ttf
+ create mode 100644 Font-Family/Modista-9ME6y.otf
+ create mode 100644 Font-Family/br-omega/BROmega-Black-BF6556cee4bd4a0.otf
+ create mode 100644 Font-Family/br-omega/BROmega-BlackItalic-BF6556cee501b48.otf
+ create mode 100644 Font-Family/br-omega/BROmega-Bold-BF6556cee4cf0f3.otf
+ create mode 100644 Font-Family/br-omega/BROmega-BoldItalic-BF6556cee50cc1c.otf
+ create mode 100644 Font-Family/br-omega/BROmega-ExtraLight-BF6556cee4604f3.otf
+ create mode 100644 Font-Family/br-omega/BROmega-ExtraLightItalic-BF6556cee50e362.otf
+ create mode 100644 Font-Family/br-omega/BROmega-Light-BF6556cee4cd6b5.otf
+ create mode 100644 Font-Family/br-omega/BROmega-LightItalic-BF6556cee4df33d.otf
+ create mode 100644 Font-Family/br-omega/BROmega-Medium-BF6556cee4bc2e2.otf
+ create mode 100644 Font-Family/br-omega/BROmega-MediumItalic-BF6556cee4ec01d.otf
+ create mode 100644 Font-Family/br-omega/BROmega-Regular-BF6556cee4dd400.otf
+ create mode 100644 Font-Family/br-omega/BROmega-RegularItalic-BF6556cee4d38eb.otf
+ create mode 100644 Font-Family/br-omega/BROmega-SemiBold-BF6556cee507ac6.otf
+ create mode 100644 Font-Family/br-omega/BROmega-SemiBoldItalic-BF6556cee4dda03.otf
+ create mode 100644 Font-Family/br-omega/BROmega-Thin-BF6556cee4c7922.otf
+ create mode 100644 Font-Family/br-omega/BROmega-ThinItalic-BF6556cee46448f.otf
+ create mode 100644 Font-Family/br-omny/BROmny-Black-BF65557eb8858b2.otf
+ create mode 100644 Font-Family/br-omny/BROmny-BlackItalic-BF65557eb86b2a6.otf
+ create mode 100644 Font-Family/br-omny/BROmny-Bold-BF65557eb88a83f.otf
+ create mode 100644 Font-Family/br-omny/BROmny-BoldItalic-BF65557eb89deb2.otf
+ create mode 100644 Font-Family/br-omny/BROmny-Light-BF65557eb87f5b9.otf
+ create mode 100644 Font-Family/br-omny/BROmny-LightItalic-BF65557eb83985f.otf
+ create mode 100644 Font-Family/br-omny/BROmny-Medium-BF65557eb8745de.otf
+ create mode 100644 Font-Family/br-omny/BROmny-MediumItalic-BF65557eb87a104.otf
+ create mode 100644 Font-Family/br-omny/BROmny-Regular-BF65557eb88143f.otf
+ create mode 100644 Font-Family/br-omny/BROmny-RegularItalic-BF65557eb88d058.otf
+ create mode 100644 Font-Family/br-omny/BROmny-SemiBold-BF65557eb890e9a.otf
+ create mode 100644 Font-Family/br-omny/BROmny-SemiBoldItalic-BF65557eb87ac46.otf
+ create mode 100644 Font-Family/br-omny/BROmny-Thin-BF65557eb87d202.otf
+ create mode 100644 Font-Family/br-omny/BROmny-ThinItalic-BF65557eb8898f8.otf
+ create mode 100644 Font-Family/br-shape/BRShape-Black-BF654c4e06d01c3.otf
+ create mode 100644 Font-Family/br-shape/BRShape-BlackItalic-BF654c4e06cd16a.otf
+ create mode 100644 Font-Family/br-shape/BRShape-Bold-BF654c4e0759801.otf
+ create mode 100644 Font-Family/br-shape/BRShape-BoldItalic-BF654c4e0737686.otf
+ create mode 100644 Font-Family/br-shape/BRShape-Hairline-BF654c4e06ed74b.otf
+ create mode 100644 Font-Family/br-shape/BRShape-HairlineItalic-BF654c4e070ddd0.otf
+ create mode 100644 Font-Family/br-shape/BRShape-Light-BF654c4e06ba0d9.otf
+ create mode 100644 Font-Family/br-shape/BRShape-LightItalic-BF654c4e07677e6.otf
+ create mode 100644 Font-Family/br-shape/BRShape-Medium-BF654c4e076717b.otf
+ create mode 100644 Font-Family/br-shape/BRShape-MediumItalic-BF654c4e07599b6.otf
+ create mode 100644 Font-Family/br-shape/BRShape-Regular-BF654c4e0770efa.otf
+ create mode 100644 Font-Family/br-shape/BRShape-RegularItalic-BF654c4e0756431.otf
+ create mode 100644 Font-Family/br-shape/BRShape-SemiBold-BF654c4e0768a21.otf
+ create mode 100644 Font-Family/br-shape/BRShape-SemiBoldItalic-BF654c4e074cfe8.otf
+ create mode 100644 Font-Family/br-shape/BRShape-Super-BF654c4e075cc7f.otf
+ create mode 100644 Font-Family/br-shape/BRShape-SuperItalic-BF654c4e075abee.otf
+ create mode 100644 Font-Family/br-shape/BRShape-Thin-BF654c4e0722547.otf
+ create mode 100644 Font-Family/br-shape/BRShape-ThinItalic-BF654c4e0710ce3.otf
+ create mode 100644 Font-Family/enwallowify/Enwallowify-Black.ttf
+ create mode 100644 Font-Family/enwallowify/Enwallowify-Bold.ttf
+ create mode 100644 Font-Family/enwallowify/Enwallowify-Medium.ttf
+ create mode 100644 Font-Family/enwallowify/Enwallowify-Regular.ttf
+ create mode 100644 Font-Family/inclusive-sans-2/InclusiveSans-Italic.ttf
+ create mode 100644 Font-Family/inclusive-sans-2/InclusiveSans-Regular.ttf
+ create mode 100644 arista-sans.zip
+ create mode 100644 br-omega.zip
+ create mode 100644 br-omny.zip
+ create mode 100644 br-shape.zip
+ create mode 100644 enwallowify.zip
+ create mode 100644 inclusive-sans-2.zip
+ create mode 100644 lexend.zip
+ create mode 100644 modista.zip
+macbook@YASSCODEUR Projet_Caminar % git checkout dev
+Switched to branch 'dev'
+macbook@YASSCODEUR Projet_Caminar % git branch
+  Dev
+  header+intro
+  main
+macbook@YASSCODEUR Projet_Caminar % git merge header+intro
+Updating 22b2662..7b76f95
+Fast-forward
+ BRLNSDB.woff                                                   | Bin 0 -> 64864 bytes
+ Font-Family/.DS_Store                                          | Bin 0 -> 6148 bytes
+ Font-Family/AristaSans-EaKLn.otf                               | Bin 0 -> 22016 bytes
+ Font-Family/Lexend[wght].ttf                                   | Bin 0 -> 175756 bytes
+ Font-Family/Modista-9ME6y.otf                                  | Bin 0 -> 48884 bytes
+ Font-Family/br-omega/BROmega-Black-BF6556cee4bd4a0.otf         | Bin 0 -> 67940 bytes
+ Font-Family/br-omega/BROmega-BlackItalic-BF6556cee501b48.otf   | Bin 0 -> 68524 bytes
+ Font-Family/br-omega/BROmega-Bold-BF6556cee4cf0f3.otf          | Bin 0 -> 68088 bytes
+ Font-Family/br-omega/BROmega-BoldItalic-BF6556cee50cc1c.otf    | Bin 0 -> 68360 bytes
+ Font-Family/br-omega/BROmega-ExtraLight-BF6556cee4604f3.otf    | Bin 0 -> 64264 bytes
+ .../br-omega/BROmega-ExtraLightItalic-BF6556cee50e362.otf      | Bin 0 -> 65228 bytes
+ Font-Family/br-omega/BROmega-Light-BF6556cee4cd6b5.otf         | Bin 0 -> 65292 bytes
+ Font-Family/br-omega/BROmega-LightItalic-BF6556cee4df33d.otf   | Bin 0 -> 66364 bytes
+ Font-Family/br-omega/BROmega-Medium-BF6556cee4bc2e2.otf        | Bin 0 -> 66720 bytes
+ Font-Family/br-omega/BROmega-MediumItalic-BF6556cee4ec01d.otf  | Bin 0 -> 66944 bytes
+ Font-Family/br-omega/BROmega-Regular-BF6556cee4dd400.otf       | Bin 0 -> 64504 bytes
+ Font-Family/br-omega/BROmega-RegularItalic-BF6556cee4d38eb.otf | Bin 0 -> 65160 bytes
+ Font-Family/br-omega/BROmega-SemiBold-BF6556cee507ac6.otf      | Bin 0 -> 68220 bytes
+ .../br-omega/BROmega-SemiBoldItalic-BF6556cee4dda03.otf        | Bin 0 -> 68380 bytes
+ Font-Family/br-omega/BROmega-Thin-BF6556cee4c7922.otf          | Bin 0 -> 61764 bytes
+ Font-Family/br-omega/BROmega-ThinItalic-BF6556cee46448f.otf    | Bin 0 -> 63620 bytes
+ Font-Family/br-omny/BROmny-Black-BF65557eb8858b2.otf           | Bin 0 -> 77300 bytes
+ Font-Family/br-omny/BROmny-BlackItalic-BF65557eb86b2a6.otf     | Bin 0 -> 77684 bytes
+ Font-Family/br-omny/BROmny-Bold-BF65557eb88a83f.otf            | Bin 0 -> 77536 bytes
+ Font-Family/br-omny/BROmny-BoldItalic-BF65557eb89deb2.otf      | Bin 0 -> 79772 bytes
+ Font-Family/br-omny/BROmny-Light-BF65557eb87f5b9.otf           | Bin 0 -> 71028 bytes
+ Font-Family/br-omny/BROmny-LightItalic-BF65557eb83985f.otf     | Bin 0 -> 73476 bytes
+ Font-Family/br-omny/BROmny-Medium-BF65557eb8745de.otf          | Bin 0 -> 74068 bytes
+ Font-Family/br-omny/BROmny-MediumItalic-BF65557eb87a104.otf    | Bin 0 -> 76284 bytes
+ Font-Family/br-omny/BROmny-Regular-BF65557eb88143f.otf         | Bin 0 -> 73220 bytes
+ Font-Family/br-omny/BROmny-RegularItalic-BF65557eb88d058.otf   | Bin 0 -> 74108 bytes
+ Font-Family/br-omny/BROmny-SemiBold-BF65557eb890e9a.otf        | Bin 0 -> 76420 bytes
+ Font-Family/br-omny/BROmny-SemiBoldItalic-BF65557eb87ac46.otf  | Bin 0 -> 78844 bytes
+ Font-Family/br-omny/BROmny-Thin-BF65557eb87d202.otf            | Bin 0 -> 67128 bytes
+ Font-Family/br-omny/BROmny-ThinItalic-BF65557eb8898f8.otf      | Bin 0 -> 70940 bytes
+ Font-Family/br-shape/BRShape-Black-BF654c4e06d01c3.otf         | Bin 0 -> 69728 bytes
+ Font-Family/br-shape/BRShape-BlackItalic-BF654c4e06cd16a.otf   | Bin 0 -> 71840 bytes
+ Font-Family/br-shape/BRShape-Bold-BF654c4e0759801.otf          | Bin 0 -> 68608 bytes
+ Font-Family/br-shape/BRShape-BoldItalic-BF654c4e0737686.otf    | Bin 0 -> 68516 bytes
+ Font-Family/br-shape/BRShape-Hairline-BF654c4e06ed74b.otf      | Bin 0 -> 60008 bytes
+ .../br-shape/BRShape-HairlineItalic-BF654c4e070ddd0.otf        | Bin 0 -> 62064 bytes
+ Font-Family/br-shape/BRShape-Light-BF654c4e06ba0d9.otf         | Bin 0 -> 64420 bytes
+ Font-Family/br-shape/BRShape-LightItalic-BF654c4e07677e6.otf   | Bin 0 -> 65264 bytes
+ Font-Family/br-shape/BRShape-Medium-BF654c4e076717b.otf        | Bin 0 -> 66236 bytes
+ Font-Family/br-shape/BRShape-MediumItalic-BF654c4e07599b6.otf  | Bin 0 -> 67020 bytes
+ Font-Family/br-shape/BRShape-Regular-BF654c4e0770efa.otf       | Bin 0 -> 65516 bytes
+ Font-Family/br-shape/BRShape-RegularItalic-BF654c4e0756431.otf | Bin 0 -> 66852 bytes
+ Font-Family/br-shape/BRShape-SemiBold-BF654c4e0768a21.otf      | Bin 0 -> 67340 bytes
+ .../br-shape/BRShape-SemiBoldItalic-BF654c4e074cfe8.otf        | Bin 0 -> 68412 bytes
+ Font-Family/br-shape/BRShape-Super-BF654c4e075cc7f.otf         | Bin 0 -> 70660 bytes
+ Font-Family/br-shape/BRShape-SuperItalic-BF654c4e075abee.otf   | Bin 0 -> 72252 bytes
+ Font-Family/br-shape/BRShape-Thin-BF654c4e0722547.otf          | Bin 0 -> 62388 bytes
+ Font-Family/br-shape/BRShape-ThinItalic-BF654c4e0710ce3.otf    | Bin 0 -> 64272 bytes
+ Font-Family/enwallowify/Enwallowify-Black.ttf                  | Bin 0 -> 41412 bytes
+ Font-Family/enwallowify/Enwallowify-Bold.ttf                   | Bin 0 -> 41976 bytes
+ Font-Family/enwallowify/Enwallowify-Medium.ttf                 | Bin 0 -> 42128 bytes
+ Font-Family/enwallowify/Enwallowify-Regular.ttf                | Bin 0 -> 42044 bytes
+ Font-Family/inclusive-sans-2/InclusiveSans-Italic.ttf          | Bin 0 -> 58852 bytes
+ Font-Family/inclusive-sans-2/InclusiveSans-Regular.ttf         | Bin 0 -> 57372 bytes
+ arista-sans.zip                                                | Bin 0 -> 15566 bytes
+ br-omega.zip                                                   | Bin 0 -> 598657 bytes
+ br-omny.zip                                                    | Bin 0 -> 592353 bytes
+ br-shape.zip                                                   | Bin 0 -> 673052 bytes
+ css/style.css                                                  | 116 +++++++++++++++++++++++++++
+ enwallowify.zip                                                | Bin 0 -> 95459 bytes
+ inclusive-sans-2.zip                                           | Bin 0 -> 59222 bytes
+ index.html                                                     |  40 ++++-----
+ lexend.zip                                                     | Bin 0 -> 90595 bytes
+ modista.zip                                                    | Bin 0 -> 25312 bytes
+ 69 files changed, 138 insertions(+), 18 deletions(-)
+ create mode 100644 BRLNSDB.woff
+ create mode 100644 Font-Family/.DS_Store
+ create mode 100644 Font-Family/AristaSans-EaKLn.otf
+ create mode 100644 Font-Family/Lexend[wght].ttf
+ create mode 100644 Font-Family/Modista-9ME6y.otf
+ create mode 100644 Font-Family/br-omega/BROmega-Black-BF6556cee4bd4a0.otf
+ create mode 100644 Font-Family/br-omega/BROmega-BlackItalic-BF6556cee501b48.otf
+ create mode 100644 Font-Family/br-omega/BROmega-Bold-BF6556cee4cf0f3.otf
+ create mode 100644 Font-Family/br-omega/BROmega-BoldItalic-BF6556cee50cc1c.otf
+ create mode 100644 Font-Family/br-omega/BROmega-ExtraLight-BF6556cee4604f3.otf
+ create mode 100644 Font-Family/br-omega/BROmega-ExtraLightItalic-BF6556cee50e362.otf
+ create mode 100644 Font-Family/br-omega/BROmega-Light-BF6556cee4cd6b5.otf
+ create mode 100644 Font-Family/br-omega/BROmega-LightItalic-BF6556cee4df33d.otf
+ create mode 100644 Font-Family/br-omega/BROmega-Medium-BF6556cee4bc2e2.otf
+ create mode 100644 Font-Family/br-omega/BROmega-MediumItalic-BF6556cee4ec01d.otf
+ create mode 100644 Font-Family/br-omega/BROmega-Regular-BF6556cee4dd400.otf
+ create mode 100644 Font-Family/br-omega/BROmega-RegularItalic-BF6556cee4d38eb.otf
+ create mode 100644 Font-Family/br-omega/BROmega-SemiBold-BF6556cee507ac6.otf
+ create mode 100644 Font-Family/br-omega/BROmega-SemiBoldItalic-BF6556cee4dda03.otf
+ create mode 100644 Font-Family/br-omega/BROmega-Thin-BF6556cee4c7922.otf
+ create mode 100644 Font-Family/br-omega/BROmega-ThinItalic-BF6556cee46448f.otf
+ create mode 100644 Font-Family/br-omny/BROmny-Black-BF65557eb8858b2.otf
+ create mode 100644 Font-Family/br-omny/BROmny-BlackItalic-BF65557eb86b2a6.otf
+ create mode 100644 Font-Family/br-omny/BROmny-Bold-BF65557eb88a83f.otf
+ create mode 100644 Font-Family/br-omny/BROmny-BoldItalic-BF65557eb89deb2.otf
+ create mode 100644 Font-Family/br-omny/BROmny-Light-BF65557eb87f5b9.otf
+ create mode 100644 Font-Family/br-omny/BROmny-LightItalic-BF65557eb83985f.otf
+ create mode 100644 Font-Family/br-omny/BROmny-Medium-BF65557eb8745de.otf
+ create mode 100644 Font-Family/br-omny/BROmny-MediumItalic-BF65557eb87a104.otf
+ create mode 100644 Font-Family/br-omny/BROmny-Regular-BF65557eb88143f.otf
+ create mode 100644 Font-Family/br-omny/BROmny-RegularItalic-BF65557eb88d058.otf
+ create mode 100644 Font-Family/br-omny/BROmny-SemiBold-BF65557eb890e9a.otf
+ create mode 100644 Font-Family/br-omny/BROmny-SemiBoldItalic-BF65557eb87ac46.otf
+ create mode 100644 Font-Family/br-omny/BROmny-Thin-BF65557eb87d202.otf
+ create mode 100644 Font-Family/br-omny/BROmny-ThinItalic-BF65557eb8898f8.otf
+ create mode 100644 Font-Family/br-shape/BRShape-Black-BF654c4e06d01c3.otf
+ create mode 100644 Font-Family/br-shape/BRShape-BlackItalic-BF654c4e06cd16a.otf
+ create mode 100644 Font-Family/br-shape/BRShape-Bold-BF654c4e0759801.otf
+ create mode 100644 Font-Family/br-shape/BRShape-BoldItalic-BF654c4e0737686.otf
+ create mode 100644 Font-Family/br-shape/BRShape-Hairline-BF654c4e06ed74b.otf
+ create mode 100644 Font-Family/br-shape/BRShape-HairlineItalic-BF654c4e070ddd0.otf
+ create mode 100644 Font-Family/br-shape/BRShape-Light-BF654c4e06ba0d9.otf
+ create mode 100644 Font-Family/br-shape/BRShape-LightItalic-BF654c4e07677e6.otf
+ create mode 100644 Font-Family/br-shape/BRShape-Medium-BF654c4e076717b.otf
+ create mode 100644 Font-Family/br-shape/BRShape-MediumItalic-BF654c4e07599b6.otf
+ create mode 100644 Font-Family/br-shape/BRShape-Regular-BF654c4e0770efa.otf
+ create mode 100644 Font-Family/br-shape/BRShape-RegularItalic-BF654c4e0756431.otf
+ create mode 100644 Font-Family/br-shape/BRShape-SemiBold-BF654c4e0768a21.otf
+ create mode 100644 Font-Family/br-shape/BRShape-SemiBoldItalic-BF654c4e074cfe8.otf
+ create mode 100644 Font-Family/br-shape/BRShape-Super-BF654c4e075cc7f.otf
+ create mode 100644 Font-Family/br-shape/BRShape-SuperItalic-BF654c4e075abee.otf
+ create mode 100644 Font-Family/br-shape/BRShape-Thin-BF654c4e0722547.otf
+ create mode 100644 Font-Family/br-shape/BRShape-ThinItalic-BF654c4e0710ce3.otf
+ create mode 100644 Font-Family/enwallowify/Enwallowify-Black.ttf
+ create mode 100644 Font-Family/enwallowify/Enwallowify-Bold.ttf
+ create mode 100644 Font-Family/enwallowify/Enwallowify-Medium.ttf
+ create mode 100644 Font-Family/enwallowify/Enwallowify-Regular.ttf
+ create mode 100644 Font-Family/inclusive-sans-2/InclusiveSans-Italic.ttf
+ create mode 100644 Font-Family/inclusive-sans-2/InclusiveSans-Regular.ttf
+ create mode 100644 arista-sans.zip
+ create mode 100644 br-omega.zip
+ create mode 100644 br-omny.zip
+ create mode 100644 br-shape.zip
+ create mode 100644 enwallowify.zip
+ create mode 100644 inclusive-sans-2.zip
+ create mode 100644 lexend.zip
+ create mode 100644 modista.zip
+macbook@YASSCODEUR Projet_Caminar % git branch -m Adaptation Mobile
+fatal: No branch named 'Adaptation'.
+macbook@YASSCODEUR Projet_Caminar % git branch                     
+  Dev
+  header+intro
+  main
+macbook@YASSCODEUR Projet_Caminar % git checkout dev               
+Already on 'dev'
+macbook@YASSCODEUR Projet_Caminar % git checkout -b 
+error: switch `b' requires a value
+macbook@YASSCODEUR Projet_Caminar % git checkout dev
+Already on 'dev'
+macbook@YASSCODEUR Projet_Caminar % git checkout -b Adaptation Mobile
+fatal: 'Mobile' is not a commit and a branch 'Adaptation' cannot be created from it
+macbook@YASSCODEUR Projet_Caminar % git branch
+  Dev
+  header+intro
+  main
+macbook@YASSCODEUR Projet_Caminar % git add *
+macbook@YASSCODEUR Projet_Caminar % git commit -m " j'ai merge la branch header+intro vers dev"
+On branch dev
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+
+nothing added to commit but untracked files present (use "git add" to track)
+macbook@YASSCODEUR Projet_Caminar % ls -a
+.			Font-Family		css			index.html
+..			arista-sans.zip		docs			lexend.zip
+.DS_Store		br-omega.zip		enwallowify.zip		modista.zip
+.git			br-omny.zip		img
+BRLNSDB.woff		br-shape.zip		inclusive-sans-2.zip
+macbook@YASSCODEUR Projet_Caminar % git branch                        
+  Dev
+  header+intro
+  main
+macbook@YASSCODEUR Projet_Caminar % git branch adaptation mobile                               
+fatal: not a valid object name: 'mobile'
+macbook@YASSCODEUR Projet_Caminar % git checkout adaptation mobile
+error: pathspec 'adaptation' did not match any file(s) known to git
+error: pathspec 'mobile' did not match any file(s) known to git
+macbook@YASSCODEUR Projet_Caminar % git branch
+  Dev
+  header+intro
+  main
+macbook@YASSCODEUR Projet_Caminar % git checkout adaptation-mobile
+error: pathspec 'adaptation-mobile' did not match any file(s) known to git
+macbook@YASSCODEUR Projet_Caminar % git branch adaptation-mobile  
+macbook@YASSCODEUR Projet_Caminar % git checkout adaptation-mobile
+Switched to branch 'adaptation-mobile'
+macbook@YASSCODEUR Projet_Caminar % git branch                    
+  Dev
+* adaptation-mobile
+  header+intro
+  main
+macbook@YASSCODEUR Projet_Caminar % touch css/smobile.css
+macbook@YASSCODEUR Projet_Caminar % git add *                                                  
+macbook@YASSCODEUR Projet_Caminar % git commit -m "debut de la section vestibulum "            
+[adaptation-mobile cdabc61] debut de la section vestibulum
+ Committer: Coding_Mac <macbook@YASSCODEUR.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 80 insertions(+)
+ create mode 100644 css/smobile.css
+macbook@YASSCODEUR Projet_Caminar % git branch                                     
+  Dev
+* adaptation-mobile
+  header+intro
+  main
+macbook@YASSCODEUR Projet_Caminar % git add *                                      
+macbook@YASSCODEUR Projet_Caminar % git commit -m "adaptation mobile header+intro terminer"
+[adaptation-mobile 82d7cc0] adaptation mobile header+intro terminer
+ Committer: Coding_Mac <macbook@YASSCODEUR.lan>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 63 insertions(+), 17 deletions(-)
+macbook@YASSCODEUR Projet_Caminar % git checkout dev                                       
+Switched to branch 'dev'
+macbook@YASSCODEUR Projet_Caminar % git merge adaptation-mobile                                
+Updating 7b76f95..82d7cc0
+Fast-forward
+ css/smobile.css | 128 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ css/style.css   |   3 --
+ index.html      |   1 +
+ 3 files changed, 129 insertions(+), 3 deletions(-)
+ create mode 100644 css/smobile.css
+macbook@YASSCODEUR Projet_Caminar % git add *                                              
+macbook@YASSCODEUR Projet_Caminar % git commit -m "j'ai merge la branch adaptation-mobile ver dev"
+On branch dev
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+
+nothing added to commit but untracked files present (use "git add" to track)
+macbook@YASSCODEUR Projet_Caminar % git checkout dev           
+Already on 'dev'
+macbook@YASSCODEUR Projet_Caminar % git checkout -b adaptation-tablette
+Switched to a new branch 'adaptation-tablette'
+macbook@YASSCODEUR Projet_Caminar % git branch
+  Dev
+  adaptation-mobile
+* adaptation-tablette
+  header+intro
+  main
+macbook@YASSCODEUR Projet_Caminar % git add *                  
+macbook@YASSCODEUR Projet_Caminar % git commit -m "adaptation-tablette terminer"                 
+[adaptation-tablette ee8a68e] adaptation-tablette terminer
+ Committer: Coding_Mac <macbook@YASSCODEUR.lan>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 129 insertions(+)
+ create mode 100644 css/tablette.css
+macbook@YASSCODEUR Projet_Caminar % git checkout dev
+Switched to branch 'dev'
+macbook@YASSCODEUR Projet_Caminar % git merge adaptation-tablette
+Updating 82d7cc0..ee8a68e
+Fast-forward
+ css/tablette.css | 128 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ index.html       |   1 +
+ 2 files changed, 129 insertions(+)
+ create mode 100644 css/tablette.css
+macbook@YASSCODEUR Projet_Caminar % git checkout dev             
+Already on 'dev'
+macbook@YASSCODEUR Projet_Caminar % git branch                                  
+  Dev
+  adaptation-mobile
+  adaptation-tablette
+  header+intro
+  main
+macbook@YASSCODEUR Projet_Caminar % git checkout adaptation-mobile
+Switched to branch 'adaptation-mobile'
+macbook@YASSCODEUR Projet_Caminar % git branch                    
+  Dev
+* adaptation-mobile
+  adaptation-tablette
+  header+intro
+  main
+macbook@YASSCODEUR Projet_Caminar % git add *                                   
+macbook@YASSCODEUR Projet_Caminar % git commit -m "adaptation-mobile changement paramettre"
+[adaptation-mobile 9bb7071] adaptation-mobile changement paramettre
+ Committer: Coding_Mac <macbook@YASSCODEUR.lan>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+macbook@YASSCODEUR Projet_Caminar % git checkout dev                                       
+Switched to branch 'dev'
+macbook@YASSCODEUR Projet_Caminar % git branch                                             
+  Dev
+  adaptation-mobile
+  adaptation-tablette
+  header+intro
+  main
+macbook@YASSCODEUR Projet_Caminar % 
