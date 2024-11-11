@@ -55,12 +55,8 @@
         margin: 2rem 5rem 0 9rem; /* Réduire les marges latérales pour le contenu */
         box-shadow: 0 0 5px rgba(32, 32, 32, 0.223), 0 0 10px rgb(25, 25, 25), 0 0 15px rgb(19, 19, 19), 0 0 20px rgb(10, 10, 10);
         display: flex;
-        justify-content: center;
+        flex-direction: column;
     }
-
-
-
-
 
 
     .intro h1 {
@@ -129,9 +125,9 @@
     /* Section centrale */
     .vestibulum {
         background-color: #1f2124;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        /* justify-content: center; */
         margin: 100px;
     }
 
@@ -140,14 +136,14 @@
         background-color: #121314;
         width: 100%;
         text-align: center;
-        position: relative;
+        /* position: relative; */
     }
 
     .vest h1 {
         color: white;
         padding: 10px;
         font-size: 30px;
-        position: relative;
+        /* position: relative; */
     }
 
     /* Ligne sous le titre */
