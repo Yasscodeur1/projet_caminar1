@@ -125,4 +125,125 @@
         line-height: 1.4;
 
     }
+
+    /* Section centrale */
+    .vestibulum {
+        background-color: #1f2124;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 100px;
+    }
+
+    /* Sous-section */
+    .vest {
+        background-color: #121314;
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+
+    .vest h1 {
+        color: white;
+        padding: 10px;
+        font-size: 30px;
+        position: relative;
+    }
+
+    /* Ligne sous le titre */
+    .vest h1::after {
+        content: "";
+        display: block;
+        width: 10%;
+        height: 2px;
+        background-color: #313233;
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* Texte de la section */
+    .vest p {
+        color: #d7d6d6;
+        margin: 30px 0 50px;
+        letter-spacing: 3px;
+        font-weight: 100;
+    }
+
+    /* Grille d'images */
+    .vest-img {
+        margin: 0px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+    .vest-img img {
+        width: 100%;
+    }
+
+    /* Section de grille pour d'autres images */
+    .viverra {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+    .viverra img {
+        width: 100%;
+    }
+
+    /* Sections avec arrière-plans et alignements variés */
+    .vive {
+        background-color: #ffffff;
+        padding: 100px 50px 50px 50px;
+        text-align: start;
+        font-weight: 100;
+        font-size: large;
+    }
+
+    .vi {
+        color: #ffffff;
+        padding: 100px 50px 50px 50px;
+        text-align: end;
+        font-weight: 100;
+        font-size: large;
+    }
+
+    /* Styles pour le pied de page */
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer p {
+        color: #ffffff;
+        margin-bottom: 30px;
+        font-weight: 100;
+    }
+
+    /* Icônes sociales dans le pied de page */
+    .social-icons {
+        display: flex;
+        justify-content: center; /* Centrer les icônes */
+        gap: 30px; /* Espacement entre chaque icône */
+        margin: 50px 0 50px;
+    }
+
+    .icon {
+        color: white; /* Couleur blanche pour les icônes */
+        font-size: 24px; /* Taille des icônes */
+        text-decoration: none; /* Supprime le soulignement */
+    }
+
+    /* Couleur au survol des icônes */
+    .icon:hover {
+        color: #00acee; /* Bleu clair au survol */
+    }
 }
+
+
+
