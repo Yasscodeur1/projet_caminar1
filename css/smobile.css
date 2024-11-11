@@ -5,9 +5,10 @@
         src: url("/Projet_Caminar/Font-Family/Lexend[wght].ttf") format("opentype");
     }
 
-    html, body {
-        margin: 0;
-        padding: 0;
+    body {
+        width: 100em;
+        /* margin: 0; */
+        /* padding: 0; */
         background-color:rgb(30, 31, 35); /* Couleur de fond générale */
     }
 
@@ -55,12 +56,19 @@
         margin: 2rem 5rem 0 9rem; /* Réduire les marges latérales pour le contenu */
         box-shadow: 0 0 5px rgba(32, 32, 32, 0.223), 0 0 10px rgb(25, 25, 25), 0 0 15px rgb(19, 19, 19), 0 0 20px rgb(10, 10, 10);
         display: flex;
-        justify-content: center;
+        flex-direction: column;
     }
 
+    .intro {
+        background-color: #ffffff;
+        width: 80em;
+        text-align: center;
+        padding: 0px;
+    }
 
-
-
+    .intro-img{
+        width: 80em;
+    }
 
 
     .intro h1 {
@@ -87,26 +95,12 @@
         left: 50%;
         transform: translateX(-50%);
     }
-
-
-
-    .intro-img{
-        width: 80em;
-    }
-
-
-    .intro {
-        background-color: #ffffff;
-        width: 80em;
-        height: 50em;
-        text-align: center;
-        /* padding: 20px; */
-    }
+    
 
     .tro {
-        font-size: 30px;
+        font-size: 20px;
         letter-spacing: 1px;
-        margin: 20px 0 30px;
+        margin: 30px 0 30px;
         color: #d7d6d6;
         letter-spacing: 1px;
     }
@@ -125,4 +119,125 @@
         line-height: 1.4;
 
     }
+
+    /* Section centrale */
+    .vestibulum {
+        background-color: #1f2124;
+        margin: 100px;
+    }
+
+    /* Sous-section */
+    .vest {
+        background-color: #121314;
+        width: 100%;
+        height: 13em;
+        text-align: center;
+        /* position: relative; */
+    }
+
+    .vest h1 {
+        color: white;
+        padding: 30px 0 5px 0;
+        font-size: 30px;
+        position: relative;
+    }
+
+    /* Ligne sous le titre */
+    .vest h1::after {
+        content: "";
+        display: block;
+        width: 10%;
+        height: 2px;
+        background-color: #313233;
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* Texte de la section */
+    .vest p {
+        color: #d7d6d6;
+        margin: 30px 0 50px;
+        letter-spacing: 3px;
+        font-weight: 100;
+    }
+
+    /* Grille d'images */
+    .vest-img {
+        margin: 0px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+    .vest-img img {
+        width: 100%;
+    }
+
+    /* Section de grille pour d'autres images */
+    .viverra {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+    .viverra img {
+        width: 100%;
+    }
+
+    /* Sections avec arrière-plans et alignements variés */
+    .vive {
+        background-color: #ffffff;
+        padding:40px;
+        text-align: start;
+        font-weight: 100;
+        font-size: 25px;
+    }
+
+    .vi {
+        color: #ffffff;
+        padding: 40px;
+        text-align: end;
+        font-weight: 100;
+        font-size: 25px;
+    }
+
+    /* Styles pour le pied de page */
+    footer {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer p {
+        color: #ffffff;
+        margin-bottom: 30px;
+        font-weight: 100;
+    }
+
+    /* Icônes sociales dans le pied de page */
+    .social-icons {
+        display: flex;
+        justify-content: center; /* Centrer les icônes */
+        gap: 30px; /* Espacement entre chaque icône */
+        margin: 50px 0 50px;
+    }
+
+    .icon {
+        color: white; /* Couleur blanche pour les icônes */
+        font-size: 24px; /* Taille des icônes */
+        text-decoration: none; /* Supprime le soulignement */
+    }
+
+    /* Couleur au survol des icônes */
+    .icon:hover {
+        color: #00acee; /* Bleu clair au survol */
+    }
 }
+
+
+
