@@ -160,4 +160,36 @@
         width: 100%;
     }
 
+    .viverra{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+    .viverra img{
+        width: 100%;
+    }
+
+    .vive{
+        background-color: #ffffff;
+        padding: 100px 50px 50px 50px;
+        text-align: start;
+        font-weight: 100;
+        font-size: large;
+    }
+
+
+    .vi{
+        color: #ffffff;
+        padding: 100px 50px 50px 50px;
+        text-align: end;
+        font-weight: 100;
+        font-size: large;
+    }
+
+    .social{
+        text-align: center;
+    }
+
 }
