@@ -1,20 +1,17 @@
-/* Styles pour les écrans mobiles entre 321px et 480px */
+/* Styles pour les écrans tablette entre 600px et 1023px */
 @media screen and (min-width: 600px) and (max-width: 1023px){
     @font-face {
         font-family: "Berlin Sans FB Demi";
         src: url("/Projet_Caminar/Font-Family/Lexend[wght].ttf") format("opentype");
     }
 
-    html, body {
-        margin: 0;
-        padding: 0;
-        background-color:rgb(30, 31, 35); /* Couleur de fond générale */
-    }
-
     body {
+        width: 200em;
         font-family: "Berlin Sans FB Demi", sans-serif;
         font-size: 14px; /* Diminuer la taille de la police pour mobile */
         margin: 0;
+        padding: 0;
+        background-color:rgb(30, 31, 35); /* Couleur de fond générale */
     }
 
     .fond_img {
@@ -26,7 +23,6 @@
         background-size:cover; /*   couvrir le header avec l'image eviter la répitition  */
         background-repeat: no-repeat; /* evite de repeter l'image de fond */
         background-position-y: -190px;
-        /* background-position-y: center; Centrer l'image sur mobile */
     }
 
     .head{
@@ -52,14 +48,20 @@
     .main {
         width: 140rem;
         position:relative;
-        margin: 4rem 10rem 0 18rem; /* Réduire les marges latérales pour le contenu */
+        margin: 4em 10em 0 18em; /* Réduire les marges latérales pour le contenu */
         box-shadow: 0 0 5px rgba(32, 32, 32, 0.223), 0 0 10px rgb(25, 25, 25), 0 0 15px rgb(19, 19, 19), 0 0 20px rgb(10, 10, 10);
-        display: flex;
-        justify-content: center;
+        
     }
 
 
-
+    .intro {
+        /* position: relative; */
+        background-color: #ffffff;
+        width: 160em;
+        height: 135em;
+        text-align: center;
+        /* padding: 20px; */
+    }
 
 
 
@@ -75,12 +77,10 @@
     }
 
     .intro h1::after {
-        /* width: 20%; */
-
         content: "";
         display: block;
         width: 10%;
-        height: 1px;
+        height: 3px;
         background-color:rgba(0, 0, 0, 0.154);
         position: absolute;
         bottom: -15px;
@@ -88,28 +88,17 @@
         transform: translateX(-50%);
     }
 
-
-
     .intro-img{
         width: 160em;
     }
 
-
-    .intro {
-        background-color: #ffffff;
-        width: 160em;
-        height: 100em;
-        text-align: center;
-        /* padding: 20px; */
-    }
-
-    .tro {
+    .tro{
+        color: #d7d6d6a4;
+        padding: 20px;
+        letter-spacing: 2px;
         font-size: 30px;
-        letter-spacing: 1px;
-        margin: 40px 0 70px;
-        color: #d7d6d6;
-        letter-spacing: 1px;
     }
+   
 
     .int {
         /* width: 65em; */
@@ -125,4 +114,125 @@
         line-height: 1.4;
 
     }
+
+    /* Section centrale */
+    .vestibulum {
+        background-color: #1f2124;
+        margin: 200px;
+    }
+
+    /* Sous-section */
+    .vest {
+        background-color: #121314;
+        width: 100%;
+        /* height: 15em; */
+        text-align: center;
+        position: relative;
+        padding: 50px 0;
+    }
+
+    .vest h1 {
+        color: white;
+        padding: 15px;
+        font-size: 55px;
+        position: relative;
+    }
+
+    /* Ligne sous le titre */
+    .vest h1::after {
+        content: "";
+        display: block;
+        width: 10%;
+        height: 3px;
+        background-color: #313233;
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* Texte de la section */
+    .vest p {
+        color: #d7d6d660;
+        font-size: 30px;
+        padding: 10px 0 0;
+        letter-spacing: 3px;
+        font-weight: 100;
+    }
+
+    /* Grille d'images */
+    .vest-img {
+        margin: 0px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+    .vest-img img {
+        width: 100%;
+    }
+
+    /* Section de grille pour d'autres images */
+    .viverra {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+    .viverra img {
+        width: 100%;
+    }
+
+    /* Sections avec arrière-plans et alignements variés */
+    .vive {
+        background-color: #ffffff;
+        padding: 100px 60px 50px 60px;
+        text-align: start;
+        font-weight: 100;
+        font-size: 40px;
+    }
+
+    .vi {
+        color: #ffffff;
+        padding: 130px 60px 50px 60px;
+        text-align: end;
+        font-weight: 100;
+        font-size: 40px;
+    }
+
+    /* Styles pour le pied de page */
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer p {
+        color: #ffffff;
+        margin-bottom: 30px;
+        font-size: 30px;
+        font-weight: 100;
+    }
+
+    /* Icônes sociales dans le pied de page */
+    .social-icons {
+        display: flex;
+        justify-content: center; /* Centrer les icônes */
+        gap: 30px; /* Espacement entre chaque icône */
+        margin: 50px 0 50px;
+    }
+
+    .icon {
+        color: white; /* Couleur blanche pour les icônes */
+        font-size: 50px; /* Taille des icônes */
+        text-decoration: none; /* Supprime le soulignement */
+    }
+
+    /* Couleur au survol des icônes */
+    .icon:hover {
+        color: #00acee; /* Bleu clair au survol */
+    }
 }
+
+
