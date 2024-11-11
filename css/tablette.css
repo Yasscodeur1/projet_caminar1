@@ -1,0 +1,128 @@
+/* Styles pour les écrans mobiles entre 321px et 480px */
+@media screen and (min-width: 600px) and (max-width: 1023px){
+    @font-face {
+        font-family: "Berlin Sans FB Demi";
+        src: url("/Projet_Caminar/Font-Family/Lexend[wght].ttf") format("opentype");
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        background-color:rgb(30, 31, 35); /* Couleur de fond générale */
+    }
+
+    body {
+        font-family: "Berlin Sans FB Demi", sans-serif;
+        font-size: 14px; /* Diminuer la taille de la police pour mobile */
+        margin: 0;
+    }
+
+    .fond_img {
+        position: absolute;
+        width: 200em;
+        height: 50em; /* Adapter la hauteur pour les petits écrans */
+        background-image:
+            url('../img/bg.jpg'); /* importer l'image et placer un effet fondu bottom */
+        background-size:cover; /*   couvrir le header avec l'image eviter la répitition  */
+        background-repeat: no-repeat; /* evite de repeter l'image de fond */
+        background-position-y: -190px;
+        /* background-position-y: center; Centrer l'image sur mobile */
+    }
+
+    .head{
+        width: 190em;
+        position: relative;
+        color: white;
+        text-align: center;
+        margin-left: 6em;
+        
+    }
+
+    .head h1 {
+        margin: 0px;
+        padding-top: 200px;
+        font-size: 70px; /* Diminuer la taille du titre */
+    }
+
+    .head p {
+        font-size: 20px;
+        margin: 0px;
+    }
+
+    .main {
+        width: 140rem;
+        position:relative;
+        margin: 4rem 10rem 0 18rem; /* Réduire les marges latérales pour le contenu */
+        box-shadow: 0 0 5px rgba(32, 32, 32, 0.223), 0 0 10px rgb(25, 25, 25), 0 0 15px rgb(19, 19, 19), 0 0 20px rgb(10, 10, 10);
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+
+
+
+    .intro h1 {
+        /* margin: 20px 0 10px; */
+
+        text-align: center;
+        padding: 10px;
+        font-size: 60px;
+        font-weight:bold;
+        margin: 80px 0 0 0;
+        position: relative;
+    }
+
+    .intro h1::after {
+        /* width: 20%; */
+
+        content: "";
+        display: block;
+        width: 10%;
+        height: 1px;
+        background-color:rgba(0, 0, 0, 0.154);
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+
+    .intro-img{
+        width: 160em;
+    }
+
+
+    .intro {
+        background-color: #ffffff;
+        width: 160em;
+        height: 100em;
+        text-align: center;
+        /* padding: 20px; */
+    }
+
+    .tro {
+        font-size: 30px;
+        letter-spacing: 1px;
+        margin: 40px 0 70px;
+        color: #d7d6d6;
+        letter-spacing: 1px;
+    }
+
+    .int {
+        /* width: 65em; */
+        height: 40em;
+        /* font-size: large; */
+        padding: 10em;
+        background-color: #f5f5f5;
+        text-align: start;
+    }
+
+    .int p {
+        font-size: 2.5em;
+        line-height: 1.4;
+
+    }
+}
