@@ -1,177 +1,186 @@
+/* Appliquer le CSS uniquement pour les écrans d'au moins 1024px de largeur */
 @media screen and (min-width: 1024px) {
+
+    /* Importation de la police personnalisée */
     @font-face {
         font-family: "Berlin Sans FB Demi";
         src: url("/Projet_Caminar/Font-Family/Lexend[wght].ttf") format("opentype");
     }
-    
-    
+
+    /* Style global pour html et body */
     html, body {
         margin: 0;
         padding: 0;
-        background-color:rgb(30, 31, 35); /* Couleur de fond générale */
+        background-color: rgb(30, 31, 35); /* Couleur de fond générale */
     }
 
-    body{
+    /* Style du body avec la police personnalisée */
+    body {
         font-family: "Berlin Sans FB Demi", sans-serif;
         margin: 0px;
     }
-    .fond_img{
+
+    /* Styles pour le fond d'image principal */
+    .fond_img {
         position: absolute;
-        background-color:rgb(30, 31, 35);
-        width: 100%; /* ajuster la largeur a lan page */
-        height: 770px; /* Adjuster la hauteur */
-        background-image:
-            url('../img/bg.jpg'); /* importer l'image et placer un effet fondu bottom */
-        background-size:cover; /*   couvrir le header avec l'image eviter la répitition  */
-        background-repeat: no-repeat; /* evite de repeter l'image de fond */
-        background-position-y: -190px;
+        background-color: rgb(30, 31, 35);
+        width: 100%; /* Largeur pleine page */
+        height: 770px; /* Hauteur de l'image */
+        background-image: url('../img/bg.jpg'); /* Image de fond */
+        background-size: cover; /* Couvre le header sans répétition */
+        background-repeat: no-repeat; /* Empêche la répétition de l'image */
+        background-position-y: -190px; /* Position verticale de l'image */
     }
 
-
-    .head{
+    /* Styles du header */
+    .head {
         position: relative;
-        text-align: center; /* sert a centrer mon titre principale dans le header */
+        text-align: center; /* Centre le titre principal */
         color: white;
-
     }
 
-    .head h1{
+    .head h1 {
         padding-top: 100px;
         margin: 0px;
         font-size: 70px;
     }
 
-    .head p{
+    .head p {
         margin: 0 0 70px;
         font-size: medium;
         font-weight: thin;
         color: #b0afaf;
     }
 
-    .main{
-        position:relative;
+    /* Styles pour la section principale */
+    .main {
+        position: relative;
         margin-top: 0px;
-        margin-left: 10rem ;
+        margin-left: 10rem;
         margin-right: 10rem;
-        
-        box-shadow: 0 0 5px rgba(32, 32, 32, 0.223), 0 0 10px rgb(25, 25, 25), 0 0 15px rgb(19, 19, 19), 0 0 20px rgb(10, 10, 10);
-        
-        
-
+        box-shadow: 0 0 5px rgba(32, 32, 32, 0.223), 0 0 10px rgb(25, 25, 25), 0 0 15px rgb(19, 19, 19), 0 0 20px rgb(10, 10, 10); /* Effet d'ombre */
     }
 
-    .intro{
+    /* Section introduction */
+    .intro {
         background-color: #ffffff;
-        display:flex; /* aligner les element dans le block */
-        flex-direction: column; /* dans quel direction ? dans ce cas en colonne   */
+        display: flex;
+        flex-direction: column; /* Direction en colonne */
         flex-wrap: nowrap;
         text-align: center;
     }
 
-    .intro h1{
+    .intro h1 {
         padding: 10px;
         font-size: xx-large;
-        font-weight:bold;
+        font-weight: bold;
         margin: 50px 0 0 0;
         position: relative;
     }
 
-    .intro h1::after{
+    /* Ligne sous le titre */
+    .intro h1::after {
         content: "";
         display: block;
         width: 10%;
         height: 1px;
-        background-color:#dedede;
+        background-color: #dedede;
         position: absolute;
         bottom: -15px;
         left: 50%;
         transform: translateX(-50%);
     }
 
-    .tro{
+    /* Styles pour le texte secondaire */
+    .tro {
         color: #d7d6d6;
         margin: 30px 0 50px;
         letter-spacing: 3px;
     }
 
-    .int{
+    /* Section avec fond gris */
+    .int {
         background-color: #f5f5f5;
         text-align: start;
         padding: 80px;
     }
 
-    .int p{
+    .int p {
         color: #7a7a7a;
         font-weight: 100;
-
     }
 
-    .vestibulum{
+    /* Section centrale */
+    .vestibulum {
         background-color: #1f2124;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         margin: 100px;
-
-        
     }
 
-    .vest{
+    /* Sous-section */
+    .vest {
         background-color: #121314;
         width: 100%;
         text-align: center;
         position: relative;
     }
 
-    .vest h1{
+    .vest h1 {
         color: white;
         padding: 10px;
         font-size: 30px;
         position: relative;
     }
-    .vest h1::after{
+
+    /* Ligne sous le titre */
+    .vest h1::after {
         content: "";
         display: block;
         width: 10%;
         height: 2px;
-        background-color:#313233;
+        background-color: #313233;
         position: absolute;
         bottom: -15px;
         left: 50%;
         transform: translateX(-50%);
     }
 
-
-    .vest p{
+    /* Texte de la section */
+    .vest p {
         color: #d7d6d6;
         margin: 30px 0 50px;
         letter-spacing: 3px;
         font-weight: 100;
     }
 
-    .vest-img{
-
+    /* Grille d'images */
+    .vest-img {
         margin: 0px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
     }
-    .vest-img img{
+
+    .vest-img img {
         width: 100%;
     }
 
-    .viverra{
+    /* Section de grille pour d'autres images */
+    .viverra {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
     }
 
-    .viverra img{
+    .viverra img {
         width: 100%;
     }
 
-    .vive{
+    /* Sections avec arrière-plans et alignements variés */
+    .vive {
         background-color: #ffffff;
         padding: 100px 50px 50px 50px;
         text-align: start;
@@ -179,8 +188,7 @@
         font-size: large;
     }
 
-
-    .vi{
+    .vi {
         color: #ffffff;
         padding: 100px 50px 50px 50px;
         text-align: end;
@@ -188,8 +196,35 @@
         font-size: large;
     }
 
-    .social{
-        text-align: center;
+    /* Styles pour le pied de page */
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
+    footer p {
+        color: #ffffff;
+        margin-bottom: 30px;
+        font-weight: 100;
+    }
+
+    /* Icônes sociales dans le pied de page */
+    .social-icons {
+        display: flex;
+        justify-content: center; /* Centrer les icônes */
+        gap: 30px; /* Espacement entre chaque icône */
+        margin: 50px 0 50px;
+    }
+
+    .icon {
+        color: white; /* Couleur blanche pour les icônes */
+        font-size: 24px; /* Taille des icônes */
+        text-decoration: none; /* Supprime le soulignement */
+    }
+
+    /* Couleur au survol des icônes */
+    .icon:hover {
+        color: #00acee; /* Bleu clair au survol */
+    }
 }
