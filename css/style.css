@@ -13,12 +13,10 @@
 
     body{
         font-family: "Berlin Sans FB Demi", sans-serif;
-        /* font-family: "poppins", arial, sans serif; */
         margin: 0px;
     }
     .fond_img{
         position: absolute;
-        /* margin: 0px; */
         background-color:rgb(30, 31, 35);
         width: 100%; /* ajuster la largeur a lan page */
         height: 770px; /* Adjuster la hauteur */
@@ -71,7 +69,6 @@
     }
 
     .intro h1{
-        text-align: center;
         padding: 10px;
         font-size: xx-large;
         font-weight:bold;
@@ -84,7 +81,7 @@
         display: block;
         width: 10%;
         height: 1px;
-        background-color:rgba(0, 0, 0, 0.154);
+        background-color:#dedede;
         position: absolute;
         bottom: -15px;
         left: 50%;
@@ -109,5 +106,58 @@
 
     }
 
+    .vestibulum{
+        background-color: #1f2124;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 100px;
+
+        
+    }
+
+    .vest{
+        background-color: #121314;
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+
+    .vest h1{
+        color: white;
+        padding: 10px;
+        font-size: 30px;
+        position: relative;
+    }
+    .vest h1::after{
+        content: "";
+        display: block;
+        width: 10%;
+        height: 2px;
+        background-color:#313233;
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+    .vest p{
+        color: #d7d6d6;
+        margin: 30px 0 50px;
+        letter-spacing: 3px;
+        font-weight: 100;
+    }
+
+    .vest-img{
+
+        margin: 0px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+    .vest-img img{
+        width: 100%;
+    }
 
 }
